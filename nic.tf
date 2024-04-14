@@ -1,5 +1,5 @@
 resource "azurerm_network_interface" "TFnic" {
-  name                = "azurerm_virtual_network.TFnetwork.namenic"
+  name                = "azurerm_virtual_network.TFnetwork.name"
   location            = azurerm_resource_group.TFrg.location
   resource_group_name = azurerm_resource_group.TFrg.name
 

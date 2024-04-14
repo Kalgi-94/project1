@@ -7,7 +7,7 @@ resource "azurerm_linux_virtual_machine" "main" {
   admin_password                  = "TFvmachine1"
   disable_password_authentication = false
   network_interface_ids = [
-    azurerm_network_interface.ncpl-nic.id
+    azurerm_network_interface.TFnic.id
   ]
 
   source_image_reference {
