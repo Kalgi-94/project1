@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Kalgi-94/project1/tree/main/project1-Kalgi-VM'
+                git branch: 'main', url: 'https://github.com/Kalgi-94/project1'
             }
         }
         stage('Terraform init') {
