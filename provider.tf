@@ -17,8 +17,8 @@ skip_provider_registration = true
 }
 
 resource "azurerm_user_assigned_identity" "example" {
- resource_group_name = data.azurerm_resource_group.example.name
-  location                 = data.azurerm_resource_group.example.location
+ resource_group_name = "eg1"
+  location                 = "east us"
   name                = "example"
   
 }
