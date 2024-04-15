@@ -15,10 +15,3 @@ provider "azurerm" {
 skip_provider_registration = true
   features {}
 }
-
-resource "azurerm_user_assigned_identity" "example" {
- resource_group_name = "eg1"
-  location                 = "east us"
-  name                = "example"
-  
-}
