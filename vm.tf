@@ -3,8 +3,8 @@ resource "azurerm_linux_virtual_machine" "main" {
   resource_group_name             = azurerm_resource_group.TFrg.name
   location                        = "eastus"
   size                            = "Standard_D2s_v3"
-  admin_username                  = "TFvmachine1"
-  admin_password                  = "TFvmachine1"
+  admin_username                  = "TFvmachine"
+  admin_password                  = "TFvmachine"
   disable_password_authentication = false
   network_interface_ids = [
     azurerm_network_interface.TFnic.id
